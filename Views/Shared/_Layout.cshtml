@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie Mania</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <ul>
+                <li class="navbar"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="navbar"><a asp-controller="Home" asp-action="MyPodcasts">Podcasts</a></li>
+                <li class="navbar"><a asp-controller="Home" asp-action="NewMovie">Enter a New Movie</a></li>
+                <li class="navbar"><a asp-controller="Home" asp-action="MovieList">View all Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>@ViewBag.Title</h1>
+
+        @RenderBody()
+
+    </div>
+
+</body>
+
+</html>
